@@ -1,0 +1,64 @@
+/* Featured Apps */
+@import "../Variables/variables";
+@import "../Mixin/mixin.scss";
+.Featured__apps {
+  margin: 10rem 0 5rem 0;
+  h2 {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: normal;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+  }
+  .box {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    .header__box {
+      display: flex;
+      align-items: center;
+      h4 {
+        font-weight: 600;
+        font-size: 16px;
+        color: $primary-color;
+        i {
+          color: #ffd12f;
+          font-size: 13px;
+        }
+        span {
+          color: #45a787;
+        }
+      }
+      figure {
+        margin: 0 0 0 13px;
+        width: 44.08px;
+        height: 44.08px;
+      }
+      .info .author {
+        font-size: 12px;
+      }
+    }
+    .box__body p {
+      font-size: 18px;
+      line-height: 27px;
+      margin-right: 50px;
+      margin-top: 20px;
+      letter-spacing: -0.5px;
+      @include large {
+        font-size: 13px;
+        font-weight: bold;
+      }
+      @include x-large {
+        font-size: 9px;
+      }
+    }
+  }
+}
+/* Featured Apps */

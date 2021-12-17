@@ -1,0 +1,192 @@
+@import "../Variables/_variables.scss";
+@import "../Mixin/mixin.scss";
+/* header */
+.links__container {
+  margin-right: 0;
+  flex-direction: column;
+  width: 100%;
+  @include small {
+    margin-right: 23%;
+    flex-direction: row;
+  }
+  @include medium {
+    margin-right: 28%;
+  }
+  @include large {
+    margin-right: 15%;
+  }
+
+  li {
+    margin-left: 5%;
+    font-size: 1rem;
+    line-height: 30px;
+   
+    cursor: pointer;
+    a{
+      color: $black-color !important; 
+      &:hover{
+        color: $primary-color !important;
+      }
+    }
+  }
+}
+.header__content,
+.description {
+  margin: 30px auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__content {
+  h1 {
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: $primary-color;
+    text-align: center;
+    @include small {
+      font-size: 1.5rem;
+    }
+    @include medium {
+      font-size: 30px;
+      line-height: 64px;
+    }
+  }
+  p {
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 34px;
+    text-align: center;
+    width: 60%;
+    @include small {
+      font-size: 14px;
+      width: 50%;
+    }
+    @include medium {
+      font-size: 18px;
+      width: 46%;
+    }
+    @include large {
+      width: 45%;
+    }
+  }
+}
+.btn__primary {
+  display: inline-block;
+  color: $secondary-color !important;
+  text-decoration: none;
+  background: $primary-color;
+  border-radius: 10px;
+  padding: 12px 40px;
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 34px;
+  transition: all 0.5s ease;
+  @include medium {
+    padding: 12px 60px;
+    font-size: 18px;
+  }
+  @include large {
+    padding: 12px 86px;
+  }
+
+  i {
+    font-size: 1rem;
+    animation: beat 0.17s infinite alternate;
+    transform-origin: right;
+  }
+}
+@keyframes beat {
+  to {
+    transform: scale(1.2);
+  }
+}
+.description,
+.zid__app {
+  position: relative;
+}
+.description .gif {
+  width: 434.89px;
+  height: 309.29px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin: 40px 0 0;
+  z-index: 100;
+  @include small {
+    width: 540.89px;
+    height: 358.29px;
+  }
+  @include medium {
+    width: 660.89px;
+    height: 431.29px;
+  }
+  @include large {
+    width: 846.89px;
+    height: 549.29px;
+  }
+}
+.dot__pattern {
+  position: absolute;
+  width: 127px;
+  height: 128px;
+  left: -7px;
+  z-index: 99;
+  top: 7px;
+  display: none;
+  @include small {
+    display: block;
+    left: -29px;
+    top: 4px;
+    width: 111px;
+    height: 142px;
+  }
+  @include medium {
+    width: 147px;
+    height: 141px;
+  }
+  @include large {
+    width: 176px;
+    height: 191px;
+    left: 0;
+    top: 0;
+  }
+  @include x-large {
+    left: 60px;
+  }
+}
+.ellipse {
+  position: absolute;
+  width: 159.32px;
+  height: 159.32px;
+  right: -9px;
+  top: 233px;
+  z-index: 99;
+  display: none;
+  @include small {
+    display: block;
+    right: -28px;
+    top: 255px;
+    width: 195.32px;
+    height: 195.32px;
+  }
+  @include medium {
+    top: 300px;
+    width: 255.32px;
+    height: 253.32px;
+  }
+  @include large {
+    top: 410px;
+  }
+  @include x-large {
+    width: 367.32px;
+    height: 367.32px;
+    right: 47px;
+    top: 330px;
+  }
+}
+/* header */

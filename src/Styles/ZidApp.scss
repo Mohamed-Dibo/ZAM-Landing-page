@@ -1,0 +1,114 @@
+/* zid__app */
+@import "../Variables/variables";
+@import "../Mixin/mixin.scss";
+.zid__app {
+  padding: 60px 0px 25px;
+  margin-top: 180px;
+  background: rgba(250, 250, 252, 0.93);
+  .content {
+    font-family: Cairo;
+    font-style: normal;
+    padding: 0 0 0 22px;
+    @include x-large {
+      padding: 0 0 0 60px;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: -1px;
+      color: $primary-color;
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $black-color;
+    }
+    ul li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      &:last-child {
+        margin-bottom: 40px;
+        figure img {
+          height: 24.83px;
+          width: 22.82px;
+        }
+      }
+      figure {
+        width: 50.14px;
+        height: 51px;
+        background: $white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 0;
+        box-shadow: 1px 3px 6px 0px $primaryAlpha-color;
+        -webkit-box-shadow: 1px 3px 6px 0px $primaryAlpha-color;
+        -moz-box-shadow: 1px 3px 6px 0px $primaryAlpha-color;
+        img {
+          width: 24.82px;
+          height: 19.83px;
+        }
+      }
+      p {
+        margin: 0 20px 0 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+  .description__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .zidapp__gif {
+      width: 434.89px;
+      height: 309.29px;
+      filter: drop-shadow(0px 4px 19px $primaryAlpha-color);
+      border-radius: 40px;
+      overflow: hidden;
+      z-index: 100;
+      @include small {
+        width: 540.89px;
+        height: 358.29px;
+      }
+      @include medium {
+        width: 660.89px;
+        height: 431.29px;
+      }
+      @include large {
+        width: 595.98px;
+        height: 441px;
+      }
+      @include x-large {
+        width: 700.98px;
+      }
+    }
+    .dot__pattern {
+      display: none;
+      @include x-large {
+        display: block;
+        left: 45px;
+        top: 20px;
+      }
+    }
+    .ellipse {
+      display: none;
+      @include large {
+        display: block;
+        right: 500px;
+        top: 205px;
+      }
+    }
+  }
+}
+
+/* zid__app */
