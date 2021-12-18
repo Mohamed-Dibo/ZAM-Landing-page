@@ -6,4 +6,4 @@ gh-pages   : npm i gh-pages --save .
 
 # Link for a live demo
 
-### https://mohamed-dibo.github.io/ZAM-Landing-page/
+### https://mohamed-dibo.github.io/Zid-Landing-page/
