@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ZAM-Landing-page/static/css/main.0cc4738b.css",
+    "main.js": "/ZAM-Landing-page/static/js/main.28621064.js",
+    "static/js/787.cfd8f164.chunk.js": "/ZAM-Landing-page/static/js/787.cfd8f164.chunk.js",
+    "static/media/zidapp.gif": "/ZAM-Landing-page/static/media/zidapp.c104f694fc6d097228ee.gif",
+    "static/media/gif": "/ZAM-Landing-page/static/media/9d22e51e16561f96575713284c465150.efe6ee6268e937c9f99f.gif",
+    "static/media/footerImage.png": "/ZAM-Landing-page/static/media/footerImage.c373957b7b6a8d9d3604.png",
+    "index.html": "/ZAM-Landing-page/index.html",
+    "main.0cc4738b.css.map": "/ZAM-Landing-page/static/css/main.0cc4738b.css.map",
+    "main.28621064.js.map": "/ZAM-Landing-page/static/js/main.28621064.js.map",
+    "787.cfd8f164.chunk.js.map": "/ZAM-Landing-page/static/js/787.cfd8f164.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cc4738b.css",
+    "static/js/main.28621064.js"
+  ]
+}
